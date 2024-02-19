@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Rock, Paper & Scissors Game</h1>
-
-    <button onclick="playGame()">Play Game</button>
+    <div id="headerSection" class="container">
+        <h1>Rock, Paper & Scissors Game</h1>
+        <button id="newGame" hidden onclick="location.reload()">New Game</button>
+    </div>
+    <div id="playerOptionsSection" class="container">
+        <button id="ROCK" class="btn-player-option">Rock</button>
+        <button id="PAPER" class="btn-player-option">Paper</button>
+        <button id="SCISSOR" class="btn-player-option">Scissors</button>
+    </div>
+    <div id="scoreSection" class="container">
+        <div class="headerScoreSection">
+            SCORE
+        </div>
+        <div class="playerScoreSection">
+            PLAYER
+            <div class="playerScore">0</div>
+        </div>
+        <div class="computerScoreSection">
+            COMPUTER
+            <div class="computerScore">0</div>
+        </div>
+    </div>
+    <div id="resultSection" class="container">
+        <div id="showSelections"></div>
+        <div id="showResult"></div>
+    </div>
 </body>
 </html>
